@@ -8,7 +8,7 @@ git branch -M main
 
 REM Substitui o remote se já existir
 git remote remove origin 2>nul
-git remote add origin %REPO_URL%
+git remote add origin https://github.com/Davinho1334/TaskFlow.git
 
 git push -u origin main
 

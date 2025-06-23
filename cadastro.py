@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from models import User, RoleEnum
 from database import Base
 
-engine = create_engine('sqlite:///taskflow.db')
+engine = create_engine('postgresql://usuario:senha@localhost:5432/taskflow')
 Session = sessionmaker(bind=engine)
 session = Session()
 

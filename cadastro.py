@@ -11,7 +11,7 @@ def cadastrar_usuario(username, senha, role=RoleEnum.user):
     if session.query(User).filter_by(username=username).first():
         print("Usuário já existe.")
         return
-    novo_usuario = User(
+    novo_usuario = Use(
         username=username,
         hashed_password=senha,
         role=role

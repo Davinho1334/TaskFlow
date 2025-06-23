@@ -5,3 +5,14 @@ DATABASE_URL = "postgresql://usuario:senha@localhost:5432/nome_do_banco"  # Subs
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine, autocommit=False, autoflush=False)
 Base = declarative_base()
+
+
+
+
+
+
+
+
+
+
+
